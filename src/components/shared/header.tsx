@@ -17,7 +17,7 @@ const Header = ({}: HeaderProps) => {
 
         <Link href={"https://wa.me/message/QCRD26U4R3SID1"} target="_blank">
           <button className="border px-4 py-2 rounded-lg font-semibold">
-            Let's Get Started
+            Let&apos;s Get Started
           </button>
         </Link>
       </Container>
