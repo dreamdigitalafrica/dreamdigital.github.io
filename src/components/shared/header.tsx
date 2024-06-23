@@ -15,8 +15,8 @@ const Header = ({}: HeaderProps) => {
           alt="Dream Digital Logo"
         />
 
-        <nav className="text-white">
-          <ul className="flex gap-4">
+        <nav className="text-white font-[300]   text-sm ">
+          <ul className="flex gap-6">
             <li>
               <Link href={"/"}>Who we are</Link>
             </li>
@@ -24,7 +24,10 @@ const Header = ({}: HeaderProps) => {
               <Link href={"/"}>What we do</Link>
             </li>
             <li>
-              <Link href={"/"}>Our works</Link>
+              <Link href={"/our-works"}>Our works</Link>
+            </li>
+            <li>
+              <Link href={"/"}>Our blog</Link>
             </li>
             <li>
               <Link href={"/"}>Reach us</Link>
@@ -32,7 +35,11 @@ const Header = ({}: HeaderProps) => {
           </ul>
         </nav>
 
-        <Link className="hidden md:block" href={"https://wa.me/message/QCRD26U4R3SID1"} target="_blank">
+        <Link
+          className="hidden md:block"
+          href={"https://wa.me/message/QCRD26U4R3SID1"}
+          target="_blank"
+        >
           <button className="text-white border px-4 py-2 rounded-lg font-semibold">
             Let&apos;s Get Started
           </button>

@@ -8,10 +8,16 @@
   }
 }
 
+
+
 header {
   position: sticky;
   top: 0;
   background: rgba(9, 4, 34, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+}
+
+main{
+  min-height: 90vh;
 }
