@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Spectral } from "next/font/google";
+import { Inter, Merriweather, Spectral } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/header";
 import Footer from "@/components/shared/footer";
 
-const spectral = Spectral({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500"],
+const merriweather = Merriweather({
+  subsets: ["latin", 'cyrillic'],
+  weight: ["300", "400", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={spectral.className}>
+      <body className={merriweather.className}>
         <Header />
 
         {children}
