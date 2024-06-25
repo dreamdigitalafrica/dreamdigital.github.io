@@ -8,16 +8,22 @@
   }
 }
 
-
-
 header {
   position: sticky;
   top: 0;
-  background: rgba(9, 4, 34, 0.2);
+  /* background: rgba(9, 4, 34, 0.2);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); */
+
+  @apply shadow-sm;
 }
 
-main{
+main {
   min-height: 90vh;
+}
+
+.section-title {
+  color: #ff674d;
+
+  @apply py-2 font-bold;
 }

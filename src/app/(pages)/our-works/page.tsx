@@ -6,7 +6,7 @@ const OurWorksPage = ({}: OurWorksPageProps) => {
   return (
     <main>
       <Container>
-        <h1>Our works</h1>
+        <h1 className="section-title">Our works</h1>
       </Container>
     </main>
   );

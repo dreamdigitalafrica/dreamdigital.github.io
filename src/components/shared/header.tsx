@@ -17,19 +17,21 @@ const Header = ({}: HeaderProps) => {
   };
 
   return (
-    <header className="shadow-sm bg-blue-950 z-50 relative">
+    <header className="shadow-sm bg-white  z-50 sticky top-0">
       <Container classes="py-4 flex justify-between items-center">
-        <Image
-          src={"/logo_landscape.png"}
-          height={36}
-          width={84}
-          alt="Dream Digital Logo"
-        />
+        <Link href="/">
+          <Image
+            src={"/logo_landscape.png"}
+            height={36}
+            width={84}
+            alt="Dream Digital Logo"
+          />
+        </Link>
 
         <nav
           className={`${
             !isMenuOpen ? "hidden" : "flex"
-          } md:flex flex-col md:flex-row w-full px-6 py-6 md:p-0 md:w-max left-0 text-white font-[300] text-sm absolute md:relative top-[100%] bg-blue-700 md:bg-transparent`}
+          } md:flex flex-col md:flex-row w-full px-6 py-6 md:p-0 md:w-max left-0 text-blue-500 absolute md:relative top-[100%] shadow-sm text-sm md:text-base bg-white`}
         >
           <ul className="flex flex-col md:flex-row gap-6 w-full font-semibold">
             <li className="w-full md:w-max">
@@ -81,7 +83,7 @@ const Header = ({}: HeaderProps) => {
         </nav>
 
         <div className="menu-toggler flex md:hidden" onClick={toggleMenu}>
-          <AiOutlineMenu size={24} className="text-white" />
+          <AiOutlineMenu size={24} className="text-blue-500" />
         </div>
 
         <Link
@@ -89,7 +91,7 @@ const Header = ({}: HeaderProps) => {
           href={"https://wa.me/message/QCRD26U4R3SID1"}
           target="_blank"
         >
-          <button className="text-white border px-4 py-2 rounded-lg font-semibold">
+          <button className="text-blue-500 border px-4 py-2 rounded-lg font-semibold border-[#ff674d]">
             Let&apos;s Get Started
           </button>
         </Link>
