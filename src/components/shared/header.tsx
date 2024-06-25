@@ -17,7 +17,7 @@ const Header = ({}: HeaderProps) => {
           alt="Dream Digital Logo"
         />
 
-        <nav className="text-white font-[300]   text-sm ">
+        <nav className="hidden md:flex text-white font-[300]   text-sm ">
           <ul className="flex gap-6">
             <li>
               <Link href={"/"}>Who we are</Link>
@@ -38,7 +38,7 @@ const Header = ({}: HeaderProps) => {
         </nav>
 
         <div className="menu-toggler flex md:hidden">
-        <AiOutlineMenu />
+        <AiOutlineMenu size={24} className="text-white" />
         </div>
 
         <Link
