@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { FaTimes } from "react-icons/fa";
 import Container from "./container";
 import Link from "next/link";
 
@@ -31,7 +32,7 @@ const Header = ({}: HeaderProps) => {
         <nav
           className={`${
             !isMenuOpen ? "hidden" : "flex"
-          } md:flex flex-col md:flex-row w-full px-6 py-6 md:p-0 md:w-max left-0 text-blue-500 absolute md:relative top-[100%] shadow-sm text-sm md:text-base bg-white`}
+          } md:flex flex-col md:flex-row w-full px-6 pt-12  md:p-0 md:w-max left-0 text-blue-500 absolute md:relative top-0  h-screen md:h-max shadow-sm text-sm md:text-base bg-white`}
         >
           <ul className="flex flex-col md:flex-row gap-6 w-full font-semibold">
             <li className="w-full md:w-max">
@@ -80,6 +81,10 @@ const Header = ({}: HeaderProps) => {
               </Link>
             </li>
           </ul>
+
+          <div className="menu-toggler absolute flex md:hidden top-4 right-4" onClick={toggleMenu}>
+            <FaTimes size={24} />
+          </div>
         </nav>
 
         <div className="menu-toggler flex md:hidden" onClick={toggleMenu}>
