@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Merriweather, Spectral } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/header";
 import Footer from "@/components/shared/footer";
 
-const merriweather = Merriweather({
-  subsets: ["latin", 'cyrillic'],
+const montserrat = Montserrat({
+  subsets: ["latin", "cyrillic"],
   weight: ["300", "400", "700", "900"],
 });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={merriweather.className}>
+      <body className={montserrat.className}>
         <Header />
 
         {children}

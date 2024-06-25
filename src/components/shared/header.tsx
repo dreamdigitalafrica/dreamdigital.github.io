@@ -2,6 +2,8 @@ import Image from "next/image";
 import Container from "./container";
 import Link from "next/link";
 
+import { AiOutlineMenu } from "react-icons/ai";
+
 interface HeaderProps {}
 
 const Header = ({}: HeaderProps) => {
@@ -34,6 +36,10 @@ const Header = ({}: HeaderProps) => {
             </li>
           </ul>
         </nav>
+
+        <div className="menu-toggler flex md:hidden">
+        <AiOutlineMenu />
+        </div>
 
         <Link
           className="hidden md:block"
